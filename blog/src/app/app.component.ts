@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '13';
+  title = 'Angular';
+  // declared array of months.
+  months = ["January", "Feburary", "March", "April", "May",
+           "June", "July", "August", "September",
+           "October", "November", "December"];
 }

@@ -1,0 +1,19 @@
+table, th, td {
+  border: 1px, solid black;
+}
+table{
+  width: 50%;
+}
+th{
+  padding: 15px;
+  height: 50px;
+  border-bottom: 1px solid #ddd;
+}
+td{
+  padding: 15px;
+  text-align: center;
+  height: 30px;
+  vertical-align: bottom;
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {background-color: coral;}

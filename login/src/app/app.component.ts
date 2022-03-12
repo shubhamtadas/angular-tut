@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Login form';
+  myClickFunction() {
+     alert("Welcome " + ((<HTMLInputElement>document.getElementById("username")). value));
+  }
 }
