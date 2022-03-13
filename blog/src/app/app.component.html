@@ -7,10 +7,12 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!--The content below is only a placeholder and can be replaced. -->
+
+<div class="container-fluid">
+
 <div style="text-align:center">
-   <h1>
-      Welcome to {{title}}.
-   </h1>
+   <h1>Welcome to {{title}}</h1>
+   <h1 appRedEl>Welcome to {{title}}</h1>
 </div>
 
 <div > Months :
@@ -18,6 +20,13 @@
       <option *ngFor="let i of months">{{i}}</option>
    </select>
 </div>
+<br/>
+
+<div>
+   <span *ngIf="isavailable; then condition1 else condition2">Condition is valid.</span>
+   <ng-template #condition1>Condition is valid</ng-template>
+   <ng-template #condition2>Condition is invalid</ng-template>
+</div>
+<button (click)="myClickFunction()">Click Me</button>
 <app-new-cmp></app-new-cmp>
-<app-new-cmp></app-new-cmp>
-<app-new-cmp></app-new-cmp>
+</div>

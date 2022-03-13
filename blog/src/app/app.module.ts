@@ -7,11 +7,13 @@ import { NewCmpComponent } from './new-cmp/new-cmp.component';
 
 //
 import { FormsModule } from '@angular/forms';
+import { RedElDirective } from './red-el.directive';
 //
 @NgModule({
   declarations: [
     AppComponent,
-    NewCmpComponent
+    NewCmpComponent,
+    RedElDirective
   ],
   imports: [
     BrowserModule,
