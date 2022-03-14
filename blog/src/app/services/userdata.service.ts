@@ -14,4 +14,9 @@ export class UserdataService {
       {name:'Karan', age:27, email:'karan@test.com'},
     ]
   }
+  showTodayDate()
+   {
+      let ndate = new Date();
+      return ndate;
+   }
 }

@@ -7,10 +7,13 @@ import { UserdataService} from "../services/userdata.service";
 })
 export class FooterComponent{
 
-  users:any;
+  users;
+  todaydate;
    constructor(private userdata:UserdataService)
    {
     console.warn("userdata",userdata.users())
     this.users = userdata.users();
+
+      this.todaydate = this.userdata.showTodayDate(); //
   }
 }
