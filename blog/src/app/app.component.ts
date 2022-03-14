@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { UserdataService} from "./services/userdata.service";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -25,4 +25,10 @@ export class AppComponent {
    jsonval = {name:'Rox', age:'25', address:{a1:'Mumbai', a2:'Karnataka'}};
    months_1 = ["Jan", "Feb", "Mar", "April", "May", "Jun",
              "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+  users:any;
+   constructor(private userdata:UserdataService)
+   {
+    console.warn("userdata",userdata.users())
+    this.users = userdata.users();
+  }
 }

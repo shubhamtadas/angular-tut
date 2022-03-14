@@ -12,11 +12,15 @@
 
 <div style="text-align:center">
    <h1>Welcome to {{title}}</h1>
-   <h1>Welcome to {{title | uppercase}}</h1>
-    <h1>Welcome to {{title | lowercase}}</h1>
    <h1 appRedEl>Welcome to {{title}}</h1>
 </div>
-
+<!--  -->
+<ul>
+  <li *ngFor="let user of users">
+    {{user.name}} :  {{user.age}} : {{user.email}}
+  </li>
+</ul>
+<!--  -->
 <div > Months :
    <select>
       <option *ngFor="let i of months">{{i}}</option>
@@ -30,9 +34,7 @@
    <ng-template #condition2>Condition is invalid</ng-template>
 </div>
 <button (click)="myClickFunction()">Click Me</button>
-<app-new-cmp></app-new-cmp>
-</div>
-
+<!-- <app-new-cmp></app-new-cmp> -->
 <!--  -->
 <div style = "width:100%;">
    <div style = "width:100%;float:left;border:solid 1px black;">
@@ -64,7 +66,8 @@
       // here 2 and 6 refers to the start and the end index
    </div>
 </div>
-<div style = "width:50%;float:left;border:solid 1px green;">
+
+<div style = "width:100%;float:left;border:solid 1px green;">
   <br>
   <h1>Custom Pipe</h1>
   <b>Square root of 25 is: {{25 | sqrt}}</b>
@@ -72,3 +75,8 @@
   <b>Square root of 729 is: {{729 | sqrt}}</b>
 
 </div>
+</div>
+<app-new-cmp></app-new-cmp>
+
+<h1>{{title}} Footer Section</h1>
+<app-footer></app-footer>
