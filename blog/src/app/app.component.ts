@@ -21,4 +21,8 @@ export class AppComponent {
      alert("Changed month from the Dropdown");
      console.log(event);
   }
+  todaydate = new Date();
+   jsonval = {name:'Rox', age:'25', address:{a1:'Mumbai', a2:'Karnataka'}};
+   months_1 = ["Jan", "Feb", "Mar", "April", "May", "Jun",
+             "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
 }

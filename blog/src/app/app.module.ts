@@ -8,12 +8,14 @@ import { NewCmpComponent } from './new-cmp/new-cmp.component';
 //
 import { FormsModule } from '@angular/forms';
 import { RedElDirective } from './red-el.directive';
+import { SqrtPipe } from './pipes/sqrt.pipe';
 //
 @NgModule({
   declarations: [
     AppComponent,
     NewCmpComponent,
-    RedElDirective
+    RedElDirective,
+    SqrtPipe
   ],
   imports: [
     BrowserModule,
