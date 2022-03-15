@@ -11,6 +11,7 @@ import { RedElDirective } from './red-el.directive';
 import { SqrtPipe } from './pipes/sqrt.pipe';
 import { FooterComponent } from './footer/footer.component';
 //
+
 @NgModule({
   declarations: [
     AppComponent,

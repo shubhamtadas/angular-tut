@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { UserdataService} from "./services/userdata.service";
+// import { ApiService } from './apiservice/api.service';
+// import { Customer } from './customerClass/customer';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
