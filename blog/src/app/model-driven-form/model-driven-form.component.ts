@@ -17,7 +17,7 @@ export class ModelDrivenFormComponent implements OnInit {
         Validators.required,
         Validators.pattern("[^ @]*@[^ @]*")
       ])),
-      passwd: new FormControl('', this.passwordvalidation)
+      passwd: new FormControl ('', this.passwordvalidation)
     });
   }
   passwordvalidation(formcontrol:any) {

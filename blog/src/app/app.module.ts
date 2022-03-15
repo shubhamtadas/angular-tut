@@ -25,6 +25,7 @@ import { ModelDrivenFormComponent } from './model-driven-form/model-driven-form.
     FooterComponent,
     TemplateDrivenFormComponent,
     ModelDrivenFormComponent,
+
   ],
   imports: [
     BrowserModule,
