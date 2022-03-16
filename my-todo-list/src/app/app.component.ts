@@ -7,17 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-	/* An empty array that is responsible
-	to add a division */
 	public items = [];
 
-	/* A two-way binding performed which
-	pushes text on division */
+	/* A two-way binding performed which pushes text on division */
 	public newTask:any;
 
 
-	/* When input is empty, it will
-	not create a new division */
+	/* When input is empty, it will not create a new division */
 	public addToList() {
 		if (this.newTask == '') {
 		}
@@ -26,9 +22,7 @@ export class AppComponent {
 			this.newTask = '';
 		}
 	}
-
-	/* This function takes to input the
-	task, that has to be deleted*/
+ // function to delete task
 	public deleteTask(index:any,) {
 		this.items.splice(index, 1);
 		console.warn(index);
