@@ -13,6 +13,8 @@ import { SqrtPipe } from './pipes/sqrt.pipe';
 import { FooterComponent } from './footer/footer.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ModelDrivenFormComponent } from './model-driven-form/model-driven-form.component';
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
 
 //
 
@@ -25,6 +27,8 @@ import { ModelDrivenFormComponent } from './model-driven-form/model-driven-form.
     FooterComponent,
     TemplateDrivenFormComponent,
     ModelDrivenFormComponent,
+    ChildComponent,
+    ParentComponent,
 
   ],
   imports: [
