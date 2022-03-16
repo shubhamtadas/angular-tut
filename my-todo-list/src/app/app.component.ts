@@ -31,5 +31,6 @@ export class AppComponent {
 	task, that has to be deleted*/
 	public deleteTask(index:any,) {
 		this.items.splice(index, 1);
+		console.warn(index);
 	}
 }
