@@ -32,7 +32,7 @@ export class AppComponent {
   todaydate;
    constructor(private userdata:UserdataService)
    {
-    console.warn("userdata",userdata.users())
+    // console.warn("userdata",userdata.users())
     this.users = userdata.users();
 
     this.todaydate = this.userdata.showTodayDate(); //
